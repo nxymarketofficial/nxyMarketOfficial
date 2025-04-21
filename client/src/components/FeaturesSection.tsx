@@ -24,32 +24,32 @@ export default function FeaturesSection() {
 
   const features: Feature[] = [
     {
-      icon: <Zap className="text-primary" size={24} />,
+      icon: <Zap size={30} />,
       title: "High Leverage Trading",
       description: "Access up to 1:1000 leverage to maximize your trading potential with minimal capital investment."
     },
     {
-      icon: <LineChart className="text-primary" size={24} />,
+      icon: <LineChart size={30} />,
       title: "Advanced Charts",
       description: "Comprehensive technical analysis tools with real-time market data and customizable indicators."
     },
     {
-      icon: <Users className="text-primary" size={24} />,
+      icon: <Users size={30} />,
       title: "Referral Program",
       description: "Earn substantial commissions by referring new traders to NXY Markets through our generous referral system."
     },
     {
-      icon: <Shield className="text-primary" size={24} />,
+      icon: <Shield size={30} />,
       title: "Secure Trading",
       description: "Enterprise-grade security with encrypted connections and advanced fraud protection systems."
     },
     {
-      icon: <Rocket className="text-primary" size={24} />,
+      icon: <Rocket size={30} />,
       title: "Instant Execution",
       description: "Lightning-fast order execution with no requotes, ensuring you get the price you want."
     },
     {
-      icon: <Smartphone className="text-primary" size={24} />,
+      icon: <Smartphone size={30} />,
       title: "Mobile Trading",
       description: "Trade on the go with our powerful mobile application, available for both iOS and Android devices."
     }
@@ -84,8 +84,8 @@ export default function FeaturesSection() {
                 variants={fadeIn("up", 0.1 * (index + 3))}
                 className="feature-card bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
               >
-                <div className="w-14 h-14 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-6">
-                  {feature.icon}
+                <div className="w-14 h-14 bg-primary rounded-lg flex items-center justify-center mb-6 shadow-md">
+                  <span className="text-black">{feature.icon}</span>
                 </div>
                 <h3 className="text-xl font-semibold font-poppins mb-3">{feature.title}</h3>
                 <p className="text-gray-700">{feature.description}</p>

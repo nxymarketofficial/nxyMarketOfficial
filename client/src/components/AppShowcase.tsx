@@ -22,17 +22,17 @@ export default function AppShowcase() {
 
   const appFeatures: AppFeature[] = [
     {
-      icon: <PieChart className="text-primary" size={24} />,
+      icon: <PieChart size={30} />,
       title: "Real-time Analytics",
       description: "Monitor market movements and track your portfolio performance with comprehensive analytics."
     },
     {
-      icon: <Bell className="text-primary" size={24} />,
+      icon: <Bell size={30} />,
       title: "Price Alerts",
       description: "Set custom alerts for price movements and receive instant notifications when your conditions are met."
     },
     {
-      icon: <Handshake className="text-primary" size={24} />,
+      icon: <Handshake size={30} />,
       title: "One-Tap Trading",
       description: "Execute trades with a single tap using our quick-trade feature for instant market entry and exit."
     }
@@ -74,8 +74,8 @@ export default function AppShowcase() {
                   variants={slideUp((index + 1) * 0.1)}
                   className="flex items-start space-x-4"
                 >
-                  <div className="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    {feature.icon}
+                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center flex-shrink-0 shadow-md">
+                    <span className="text-black">{feature.icon}</span>
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold font-poppins mb-2">{feature.title}</h3>
