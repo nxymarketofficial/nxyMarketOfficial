@@ -54,7 +54,7 @@ export default function StatsSection() {
   ];
 
   return (
-    <section className="py-20 bg-secondary text-white relative overflow-hidden">
+    <section className="py-20 bg-black text-white relative overflow-hidden">
       <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1639815188546-c43c240e8335?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')] bg-cover opacity-20 mix-blend-overlay"></div>
       
       <div className="container mx-auto px-4 relative z-10">
@@ -80,7 +80,7 @@ export default function StatsSection() {
                   </>
                 )}
               </p>
-              <p className="text-sm md:text-base opacity-80">{stat.label}</p>
+              <p className="text-sm md:text-base text-white opacity-90">{stat.label}</p>
             </motion.div>
           ))}
         </motion.div>

@@ -58,7 +58,7 @@ export default function SocialSection() {
   ];
 
   return (
-    <section id="social" className="py-24 bg-gradient-to-br from-secondary to-gray-900 text-white relative">
+    <section id="social" className="py-24 bg-gradient-to-br from-black to-gray-900 text-white relative">
       <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1579170053380-58064b2dee67?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')] bg-cover opacity-20 mix-blend-overlay"></div>
       
       <div className="container mx-auto px-4 relative z-10">
@@ -76,7 +76,7 @@ export default function SocialSection() {
             <h2 className="text-3xl md:text-4xl font-bold font-poppins mb-4">
               Join Our <span className="text-primary">Trading Community</span>
             </h2>
-            <p className="text-lg opacity-80 max-w-2xl mx-auto">
+            <p className="text-lg text-white opacity-90 max-w-2xl mx-auto">
               Connect with fellow traders, access exclusive content, and stay updated with the latest market insights.
             </p>
           </motion.div>
@@ -92,7 +92,7 @@ export default function SocialSection() {
                   <span className={channel.iconColor}>{channel.icon}</span>
                 </div>
                 <h3 className="text-xl font-semibold font-poppins mb-3 text-center">{channel.title}</h3>
-                <p className="opacity-70 text-center mb-6">{channel.description}</p>
+                <p className="text-white opacity-90 text-center mb-6">{channel.description}</p>
                 <a 
                   href={channel.href}
                   className={`block w-full ${channel.buttonColor} text-white font-bold py-3 px-4 rounded-lg text-center ${channel.buttonHoverColor} transition-colors`}
