@@ -64,37 +64,37 @@ export default function Navbar() {
       {/* Mobile menu */}
       {mobileMenuOpen && (
         <div className="md:hidden">
-          <div className="px-4 py-3 space-y-2 bg-white shadow-md">
+          <div className="px-4 py-3 space-y-2 bg-gray-900 dark:bg-gray-900 shadow-md border-t border-gray-800">
             <a 
               href="#features" 
-              className="block py-2 font-medium hover:text-primary transition-colors"
+              className="block py-2 font-medium text-white hover:text-primary transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               Features
             </a>
             <a 
               href="#app" 
-              className="block py-2 font-medium hover:text-primary transition-colors"
+              className="block py-2 font-medium text-white hover:text-primary transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               App
             </a>
             <a 
               href="#social" 
-              className="block py-2 font-medium hover:text-primary transition-colors"
+              className="block py-2 font-medium text-white hover:text-primary transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               Community
             </a>
             <a 
               href="#download" 
-              className="block py-2 font-medium hover:text-primary transition-colors"
+              className="block py-2 font-medium text-white hover:text-primary transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               Download
             </a>
             <div className="flex items-center justify-between py-2">
-              <span className="font-medium">Toggle Theme</span>
+              <span className="font-medium text-white">Toggle Theme</span>
               <ThemeToggle />
             </div>
             <a 

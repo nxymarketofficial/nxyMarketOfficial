@@ -61,7 +61,7 @@ export default function HeroSection() {
               </a>
               <a 
                 href="#features" 
-                className="bg-white border border-gray-200 text-text font-bold py-4 px-8 rounded-full text-center hover:shadow-lg transform transition-all hover:-translate-y-1"
+                className="bg-transparent border-2 border-primary text-white dark:text-white font-bold py-4 px-8 rounded-full text-center hover:shadow-lg transform transition-all hover:-translate-y-1 hover:bg-primary/10"
               >
                 Explore Features
               </a>

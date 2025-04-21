@@ -39,7 +39,7 @@ export default function AppShowcase() {
   ];
 
   return (
-    <section id="app" className="py-24 bg-black text-white overflow-hidden">
+    <section id="app" className="py-24 bg-black dark:bg-black text-white overflow-hidden">
       <div className="container mx-auto px-4">
         <motion.div 
           ref={ref}
