@@ -72,7 +72,7 @@ export default function FeaturesSection() {
             <h2 className="text-3xl md:text-4xl font-bold font-poppins mb-4">
               Revolutionary <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Trading Features</span>
             </h2>
-            <p className="text-lg opacity-70 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-800 max-w-2xl mx-auto">
               NXY Markets provides traders with cutting-edge tools and features to stay ahead in the forex market.
             </p>
           </motion.div>
@@ -88,7 +88,7 @@ export default function FeaturesSection() {
                   {feature.icon}
                 </div>
                 <h3 className="text-xl font-semibold font-poppins mb-3">{feature.title}</h3>
-                <p className="opacity-70">{feature.description}</p>
+                <p className="text-gray-700">{feature.description}</p>
               </motion.div>
             ))}
           </div>

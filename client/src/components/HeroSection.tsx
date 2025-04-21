@@ -47,7 +47,7 @@ export default function HeroSection() {
               Next Generation
               <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"> Forex Trading</span>
             </h1>
-            <p className="text-lg md:text-xl opacity-80 max-w-lg">
+            <p className="text-lg md:text-xl text-gray-800 max-w-lg">
               Experience lightning-fast execution, unparalleled leverage options, and seamless trading on the go with NXY Markets.
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
@@ -74,7 +74,7 @@ export default function HeroSection() {
                   </div>
                 ))}
               </div>
-              <p className="text-sm opacity-80">
+              <p className="text-sm text-gray-700">
                 <span className="font-bold">50,000+</span> traders already joined
               </p>
             </div>

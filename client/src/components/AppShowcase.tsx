@@ -63,7 +63,7 @@ export default function AppShowcase() {
               Trade Smarter with the <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">NXY Markets App</span>
             </h2>
             
-            <p className="text-lg opacity-70">
+            <p className="text-lg text-gray-700">
               Our intuitive mobile application puts the power of professional trading in your pocket, allowing you to manage your positions from anywhere at any time.
             </p>
             
@@ -79,7 +79,7 @@ export default function AppShowcase() {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold font-poppins mb-2">{feature.title}</h3>
-                    <p className="opacity-70">{feature.description}</p>
+                    <p className="text-gray-700">{feature.description}</p>
                   </div>
                 </motion.div>
               ))}

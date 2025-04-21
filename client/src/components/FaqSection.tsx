@@ -77,7 +77,7 @@ export default function FaqSection() {
                   transition={{ duration: 0.3 }}
                   className="px-6 pb-6"
                 >
-                  <p className="opacity-70">{faq.answer}</p>
+                  <p className="text-gray-700 opacity-90">{faq.answer}</p>
                 </motion.div>
               )}
             </motion.div>
