@@ -19,8 +19,8 @@ export default function HeroSection() {
   ];
 
   return (
-    <section className="pt-32 pb-20 md:py-48 relative overflow-hidden bg-black text-white">
-      <div className="absolute inset-0 bg-gradient-to-b from-black to-gray-900"></div>
+    <section className="pt-32 pb-20 md:py-48 relative overflow-hidden bg-black dark:bg-black text-white">
+      <div className="absolute inset-0 bg-gradient-to-b from-black dark:from-black to-gray-900 dark:to-gray-900"></div>
       
       {/* Animated background elements */}
       <motion.div 

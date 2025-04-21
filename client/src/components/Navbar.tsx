@@ -25,7 +25,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className={`fixed w-full bg-black z-50 transition-all duration-300 ${scrolled ? "bg-opacity-90 backdrop-blur-sm shadow-sm" : "bg-opacity-100"}`}>
+    <header className={`fixed w-full bg-black dark:bg-black z-50 transition-all duration-300 ${scrolled ? "bg-opacity-90 dark:bg-opacity-90 backdrop-blur-sm shadow-sm" : "bg-opacity-100 dark:bg-opacity-100"}`}>
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <div className="flex items-center">
           <img src={nxyLogo} alt="NXY Markets Logo" className="h-10 mr-2" />

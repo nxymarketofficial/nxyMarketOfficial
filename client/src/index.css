@@ -10,4 +10,32 @@
   body {
     @apply font-sans antialiased bg-background text-foreground;
   }
+
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+
+    --primary: 51 100% 50%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+
+    --accent: 51 100% 50%;
+    --accent-foreground: 0 0% 0%;
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 98%;
+
+    --primary: 51 100% 50%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --accent: 51 100% 50%;
+    --accent-foreground: 0 0% 0%;
+  }
 }
