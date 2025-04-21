@@ -1,0 +1,93 @@
+import { motion } from "framer-motion";
+import PhoneFrame from "./PhoneFrame";
+import { Button } from "@/components/ui/button";
+import { useInView } from "react-intersection-observer";
+import { fadeIn, slideUp, staggerContainer } from "@/lib/animation";
+
+export default function HeroSection() {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  const screenshots = [
+    "https://images.unsplash.com/photo-1642790551116-18e150f248e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+  ];
+
+  return (
+    <section className="pt-32 pb-20 md:py-48 relative overflow-hidden">
+      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')] bg-cover opacity-10"></div>
+      
+      {/* Animated background elements */}
+      <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 0.2 }}
+        transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
+        className="absolute top-20 right-10 w-64 h-64 bg-primary rounded-full filter blur-3xl"
+      />
+      <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 0.1 }}
+        transition={{ duration: 3, repeat: Infinity, repeatType: "reverse", delay: 1 }}
+        className="absolute bottom-10 left-10 w-96 h-96 bg-accent rounded-full filter blur-3xl"
+      />
+      
+      <div className="container mx-auto px-4 relative z-10">
+        <motion.div 
+          ref={ref}
+          variants={staggerContainer}
+          initial="hidden"
+          animate={inView ? "show" : "hidden"}
+          className="flex flex-col md:flex-row items-center"
+        >
+          <motion.div variants={fadeIn("right", 0.3)} className="md:w-1/2 space-y-6 mb-12 md:mb-0">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-poppins leading-tight">
+              Next Generation
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"> Forex Trading</span>
+            </h1>
+            <p className="text-lg md:text-xl opacity-80 max-w-lg">
+              Experience lightning-fast execution, unparalleled leverage options, and seamless trading on the go with NXY Markets.
+            </p>
+            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
+              <a 
+                href="#download" 
+                className="bg-gradient-to-r from-primary to-accent text-secondary font-bold py-4 px-8 rounded-full text-center hover:shadow-lg transform transition-all hover:-translate-y-1"
+              >
+                Download Now
+              </a>
+              <a 
+                href="#features" 
+                className="bg-white border border-gray-200 text-text font-bold py-4 px-8 rounded-full text-center hover:shadow-lg transform transition-all hover:-translate-y-1"
+              >
+                Explore Features
+              </a>
+            </div>
+            <div className="flex items-center space-x-4 mt-8">
+              <div className="flex -space-x-2">
+                {[1, 2, 3].map((i) => (
+                  <div key={i} className="w-10 h-10 rounded-full bg-gray-300 border-2 border-white flex items-center justify-center overflow-hidden">
+                    <svg className="w-full h-full text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                ))}
+              </div>
+              <p className="text-sm opacity-80">
+                <span className="font-bold">50,000+</span> traders already joined
+              </p>
+            </div>
+          </motion.div>
+          
+          <motion.div 
+            variants={fadeIn("left", 0.5)} 
+            className="md:w-1/2 flex justify-center"
+          >
+            <PhoneFrame screenshots={screenshots} autoRotate={true} />
+          </motion.div>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
