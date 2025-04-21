@@ -36,7 +36,7 @@ export default function PhoneFrame({ screenshots, autoRotate = false }: PhoneFra
         ease: "easeInOut" 
       }}
     >
-      <div className="w-full h-full bg-white rounded-[30px] overflow-hidden relative">
+      <div className="w-full h-full bg-black rounded-[30px] overflow-hidden relative">
         {screenshots.length > 1 ? (
           <div 
             className="flex transition-transform duration-500 ease-in-out h-full"

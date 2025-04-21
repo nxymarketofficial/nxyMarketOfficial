@@ -10,15 +10,17 @@ export default function HeroSection() {
     threshold: 0.1,
   });
 
+  // Import app screenshots
   const screenshots = [
-    "https://images.unsplash.com/photo-1642790551116-18e150f248e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    "https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+    "/src/assets/trading-chart.jpg",
+    "/src/assets/market-screen.jpg",
+    "/src/assets/account-screen.jpg",
+    "/src/assets/profile-screen.jpg"
   ];
 
   return (
-    <section className="pt-32 pb-20 md:py-48 relative overflow-hidden">
-      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')] bg-cover opacity-10"></div>
+    <section className="pt-32 pb-20 md:py-48 relative overflow-hidden bg-black text-white">
+      <div className="absolute inset-0 bg-gradient-to-b from-black to-gray-900"></div>
       
       {/* Animated background elements */}
       <motion.div 
@@ -47,7 +49,7 @@ export default function HeroSection() {
               Next Generation
               <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"> Forex Trading</span>
             </h1>
-            <p className="text-lg md:text-xl text-gray-800 max-w-lg">
+            <p className="text-lg md:text-xl text-gray-300 max-w-lg">
               Experience lightning-fast execution, unparalleled leverage options, and seamless trading on the go with NXY Markets.
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
@@ -74,8 +76,8 @@ export default function HeroSection() {
                   </div>
                 ))}
               </div>
-              <p className="text-sm text-gray-700">
-                <span className="font-bold">50,000+</span> traders already joined
+              <p className="text-sm text-gray-300">
+                <span className="font-bold text-primary">50,000+</span> traders already joined
               </p>
             </div>
           </motion.div>
