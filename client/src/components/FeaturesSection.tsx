@@ -82,13 +82,13 @@ export default function FeaturesSection() {
               <motion.div
                 key={index}
                 variants={fadeIn("up", 0.1 * (index + 3))}
-                className="feature-card bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+                className="feature-card bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-700 hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
               >
                 <div className="w-14 h-14 bg-primary rounded-lg flex items-center justify-center mb-6 shadow-md">
                   <span className="text-black">{feature.icon}</span>
                 </div>
-                <h3 className="text-xl font-semibold font-poppins mb-3">{feature.title}</h3>
-                <p className="text-gray-700">{feature.description}</p>
+                <h3 className="text-xl font-semibold font-poppins mb-3 text-white">{feature.title}</h3>
+                <p className="text-gray-300">{feature.description}</p>
               </motion.div>
             ))}
           </div>

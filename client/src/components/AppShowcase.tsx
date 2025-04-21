@@ -17,7 +17,7 @@ export default function AppShowcase() {
   });
 
   const appScreenshot = [
-    "https://images.unsplash.com/photo-1613442301239-ea2478101ea7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+    "/src/assets/trading-chart.jpg"
   ];
 
   const appFeatures: AppFeature[] = [
@@ -39,7 +39,7 @@ export default function AppShowcase() {
   ];
 
   return (
-    <section id="app" className="py-24 bg-gray-50 overflow-hidden">
+    <section id="app" className="py-24 bg-black text-white overflow-hidden">
       <div className="container mx-auto px-4">
         <motion.div 
           ref={ref}
@@ -63,7 +63,7 @@ export default function AppShowcase() {
               Trade Smarter with the <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">NXY Markets App</span>
             </h2>
             
-            <p className="text-lg text-gray-700">
+            <p className="text-lg text-gray-300">
               Our intuitive mobile application puts the power of professional trading in your pocket, allowing you to manage your positions from anywhere at any time.
             </p>
             
@@ -78,8 +78,8 @@ export default function AppShowcase() {
                     <span className="text-black">{feature.icon}</span>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold font-poppins mb-2">{feature.title}</h3>
-                    <p className="text-gray-700">{feature.description}</p>
+                    <h3 className="text-xl font-semibold font-poppins mb-2 text-white">{feature.title}</h3>
+                    <p className="text-gray-300">{feature.description}</p>
                   </div>
                 </motion.div>
               ))}
