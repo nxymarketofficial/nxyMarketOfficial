@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import nxyLogo from "../assets/nxy-logo.jpg";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -23,30 +24,28 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className={`fixed w-full bg-white z-50 transition-all duration-300 ${scrolled ? "bg-opacity-90 backdrop-blur-sm shadow-sm" : "bg-opacity-100"}`}>
+    <header className={`fixed w-full bg-black z-50 transition-all duration-300 ${scrolled ? "bg-opacity-90 backdrop-blur-sm shadow-sm" : "bg-opacity-100"}`}>
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <div className="flex items-center">
-          <h1 className="text-2xl font-bold font-poppins">
-            <span className="text-primary">NXY</span> Markets
-          </h1>
+          <img src={nxyLogo} alt="NXY Markets Logo" className="h-10 mr-2" />
         </div>
         
         <nav className="hidden md:flex space-x-8">
-          <a href="#features" className="font-medium hover:text-primary transition-colors">Features</a>
-          <a href="#app" className="font-medium hover:text-primary transition-colors">App</a>
-          <a href="#social" className="font-medium hover:text-primary transition-colors">Community</a>
-          <a href="#download" className="font-medium hover:text-primary transition-colors">Download</a>
+          <a href="#features" className="font-medium text-white hover:text-primary transition-colors">Features</a>
+          <a href="#app" className="font-medium text-white hover:text-primary transition-colors">App</a>
+          <a href="#social" className="font-medium text-white hover:text-primary transition-colors">Community</a>
+          <a href="#download" className="font-medium text-white hover:text-primary transition-colors">Download</a>
         </nav>
         
         <button 
-          className="md:hidden focus:outline-none" 
+          className="md:hidden focus:outline-none text-white" 
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle menu"
         >
           {mobileMenuOpen ? (
-            <X className="h-6 w-6" />
+            <X className="h-6 w-6 text-white" />
           ) : (
-            <Menu className="h-6 w-6" />
+            <Menu className="h-6 w-6 text-white" />
           )}
         </button>
         
