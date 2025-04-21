@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { ThemeToggle } from "./ThemeToggle";
 import nxyLogo from "../assets/nxy-logo.jpg";
 
 export default function Navbar() {
@@ -49,12 +50,15 @@ export default function Navbar() {
           )}
         </button>
         
-        <a 
-          href="#download" 
-          className="hidden md:block bg-gradient-to-r from-primary to-accent text-secondary font-bold py-2 px-6 rounded-full hover:shadow-lg transition-all"
-        >
-          Get Started
-        </a>
+        <div className="hidden md:flex items-center space-x-4">
+          <ThemeToggle />
+          <a 
+            href="#download" 
+            className="bg-gradient-to-r from-primary to-accent text-secondary font-bold py-2 px-6 rounded-full hover:shadow-lg transition-all"
+          >
+            Get Started
+          </a>
+        </div>
       </div>
       
       {/* Mobile menu */}
@@ -89,6 +93,10 @@ export default function Navbar() {
             >
               Download
             </a>
+            <div className="flex items-center justify-between py-2">
+              <span className="font-medium">Toggle Theme</span>
+              <ThemeToggle />
+            </div>
             <a 
               href="#download" 
               className="block py-2 mt-2 text-center bg-gradient-to-r from-primary to-accent text-secondary font-bold rounded-full hover:shadow-lg transition-all"
