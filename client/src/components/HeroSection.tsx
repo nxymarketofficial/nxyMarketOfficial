@@ -12,10 +12,10 @@ export default function HeroSection() {
 
   // Import app screenshots
   const screenshots = [
-    "/src/assets/trading-chart.jpg",
-    "/src/assets/market-screen.jpg",
-    "/src/assets/account-screen.jpg",
-    "/src/assets/profile-screen.jpg"
+    "https://res.cloudinary.com/dx5vy9uki/image/upload/v1746096025/photo_2025-04-21_13-58-46_3_bqm3ix.jpg",
+    "https://res.cloudinary.com/dx5vy9uki/image/upload/v1746096047/photo_2025-04-21_13-59-42_xrclqy.jpg",
+    "https://res.cloudinary.com/dx5vy9uki/image/upload/v1746096064/photo_2025-04-21_13-58-46_spxpde.jpg",
+    "https://res.cloudinary.com/dx5vy9uki/image/upload/v1746096078/photo_2025-04-21_13-58-46_2_zoiutj.jpg"
   ];
 
   return (
