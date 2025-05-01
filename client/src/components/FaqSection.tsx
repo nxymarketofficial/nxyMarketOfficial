@@ -70,7 +70,7 @@ export default function FaqSection() {
                   {faq.question}
                 </h4>
                 <ChevronDown
-                  className={`transform transition-transform ${
+                  className={`transform transition-transform text-gray-700 ${
                     activeIndex === index ? 'rotate-180' : ''
                   }`}
                   size={20}
