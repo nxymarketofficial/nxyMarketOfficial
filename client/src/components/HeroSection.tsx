@@ -27,7 +27,7 @@ export default function HeroSection() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.2 }}
         transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
-        className="absolute top-20 right-10 w-64 h-64 bg-primary rounded-full filter blur-3xl"
+        className="absolute top-20 right-10 w-64 h-64 bg-primary rounded-full filter blur-2xl"
       />
       <motion.div 
         initial={{ opacity: 0 }}
@@ -36,7 +36,7 @@ export default function HeroSection() {
         className="absolute bottom-10 left-10 w-96 h-96 bg-accent rounded-full filter blur-3xl"
       />
       
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-4 px-4 relative z-10">
         <motion.div 
           ref={ref}
           variants={staggerContainer}

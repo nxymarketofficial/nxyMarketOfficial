@@ -28,7 +28,7 @@ export default function FaqSection() {
     },
     {
       question: "What leverage options are available?",
-      answer: "NXY Markets offers flexible leverage options ranging from 1:1 up to 1:1000, allowing you to choose the level that best suits your trading strategy and risk tolerance."
+      answer: "NXY Markets offers flexible leverage options ranging from 1:100 up to 1:1000, allowing you to choose the level that best suits your trading strategy and risk tolerance."
     },
     {
       question: "Is NXY Markets available worldwide?",

@@ -26,9 +26,9 @@ export default function Navbar() {
 
   return (
     <header className={`fixed w-full bg-black dark:bg-black z-50 transition-all duration-300 ${scrolled ? "bg-opacity-90 dark:bg-opacity-90 backdrop-blur-sm shadow-sm" : "bg-opacity-100 dark:bg-opacity-100"}`}>
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div className="container mx-auto px-4 py-1 flex justify-between items-center">
         <div className="flex items-center">
-          <img src={nxyLogo} alt="NXY Markets Logo" className="h-10 mr-2" />
+          <img src={nxyLogo} alt="NXY Markets Logo" className="h-20 mr-2" />
         </div>
         
         <nav className="hidden md:flex space-x-8">
@@ -51,7 +51,7 @@ export default function Navbar() {
         </button>
         
         <div className="hidden md:flex items-center space-x-4">
-          <ThemeToggle />
+          {/* <ThemeToggle /> */}
           <a 
             href="#download" 
             className="bg-gradient-to-r from-primary to-accent text-secondary font-bold py-2 px-6 rounded-full hover:shadow-lg transition-all"
@@ -93,10 +93,10 @@ export default function Navbar() {
             >
               Download
             </a>
-            <div className="flex items-center justify-between py-2">
+            {/* <div className="flex items-center justify-between py-2">
               <span className="font-medium text-white">Toggle Theme</span>
               <ThemeToggle />
-            </div>
+            </div> */}
             <a 
               href="#download" 
               className="block py-2 mt-2 text-center bg-gradient-to-r from-primary to-accent text-secondary font-bold rounded-full hover:shadow-lg transition-all"
