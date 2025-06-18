@@ -100,7 +100,7 @@ export default function HeroSection() {
                 ))}
               </div>
               <p className="text-sm text-gray-300">
-                <span className="font-bold text-primary">50,000+</span> traders
+                <span className="font-bold text-primary">10,000+</span> traders
                 already joined
               </p>
             </div>
