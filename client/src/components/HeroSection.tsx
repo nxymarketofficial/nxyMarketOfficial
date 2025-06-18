@@ -66,7 +66,7 @@ export default function HeroSection() {
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
               <a
-                href="#download"
+                href="https://github.com/nxymarketofficial/Nxymarket_android_-apk/releases/download/v1.0.0/NxyMarket.apk"
                 className="bg-gradient-to-r from-primary to-accent text-secondary font-bold py-4 px-8 rounded-full text-center hover:shadow-lg transform transition-all hover:-translate-y-1"
               >
                 Download Now
