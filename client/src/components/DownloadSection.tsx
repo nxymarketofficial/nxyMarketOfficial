@@ -52,7 +52,7 @@ export default function DownloadSection() {
 
                 <div className="pt-4">
                   <a
-                    href="https://github.com/nxymarketofficial/Nxymarket_android_-apk/releases/download/v1.0.0/NxyMarket.apk"
+                    href="https://github.com/nxymarketofficial/Nxymarket_android_-apk/releases/download/v1.0.0/NXYMarket.apk"
                     className="inline-block  bg-primary text-secondary font-bold py-4 px-10 rounded-xl text-center justify-center shadow-lg hover:bg-opacity-90 transition-all flex items-center space-x-3 hover:-translate-y-1 duration-300"
                   >
                     <Download className="w-5 h-5" />
